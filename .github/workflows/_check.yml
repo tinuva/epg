@@ -1,0 +1,34 @@
+name: _check
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - name: Download data from API
+        run: |
+          mkdir -p scripts/data
+          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - uses: tj-actions/changed-files@v12.2
+        id: files
+        with:
+          files: 'sites'
+      - name: validate
+        if: steps.files.outputs.any_changed == 'true'
+        run: |
+          npm install
+          npm run channels:lint -- ${{ steps.files.outputs.all_changed_files }}
+          npm run channels:validate -- ${{ steps.files.outputs.all_changed_files }}

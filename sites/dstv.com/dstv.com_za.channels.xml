@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="dstv.com">
+  <channels>
+    <channel lang="en" xmltv_id="HDT" site_id="zaf#101" tag="HDT">M-Net HD</channel>
+  </channels>
+</site>
