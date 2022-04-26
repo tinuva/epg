@@ -16,7 +16,7 @@ jobs:
       - name: Download data from API
         run: |
           mkdir -p scripts/data
-          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
+          curl -L -o scripts/data/channels.json https://raw.githubusercontent.com/tinuva/epg/main/scripts/data/channels.json
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
