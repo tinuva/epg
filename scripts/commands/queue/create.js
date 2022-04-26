@@ -50,13 +50,14 @@ async function createQueue() {
       for (const item of items) {
         //logger.info(`Item ${item.xmltv_id}`)
         if (!item.site || !item.xmltv_id) continue
-        const channel = true //api.channels.find({ id: item.xmltv_id })
+        var channel = api.channels.find({ id: item.xmltv_id })
         logger.info(`Channel ${channel}`)
+        if (!channel) channel = true 
         if (!channel) continue
         for (const d of dates) {
           const dString = d.toJSON()
           const key = `${item.site}:${item.lang}:${item.xmltv_id}:${dString}`
-          //logger.info(`Key ${key}`)
+          logger.info(`Key ${key}`)
           if (!queue[key]) {
             queue[key] = {
               channel: {

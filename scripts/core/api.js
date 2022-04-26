@@ -5,6 +5,8 @@ const DATA_DIR = process.env.DATA_DIR || './scripts/data'
 
 class API {
   constructor(filepath) {
+    logger.info(`Filepath ${filepath}`)
+    logger.info(`This Filepath ${this.filepath}`)
     this.filepath = file.resolve(filepath)
   }
 
