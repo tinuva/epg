@@ -1,0 +1,747 @@
+[
+  {
+    "id": "HDT",
+    "name": "M-Net HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/HDT.png"
+  },
+  {
+    "id": "VAM",
+    "name": "1 Magic HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/VAM.png"
+  },
+  {
+    "id": "MFH",
+    "name": "ME Channel",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MFH.png"
+  },
+  {
+    "id": "V30",
+    "name": "VUZU HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/V30.png"
+  },
+  {
+    "id": "UHD",
+    "name": "Universal TV HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/UHD.png"
+  },
+  {
+    "id": "TEL",
+    "name": "TeleMundo English",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TEL.png"
+  },
+  {
+    "id": "B23",
+    "name": "BBC First HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/B23.png"
+  },
+  {
+    "id": "B26",
+    "name": "BBC Brit HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/B26.png"
+  },
+  {
+    "id": "DHD",
+    "name": "Discovery Channel HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/DHD.png"
+  },
+  {
+    "id": "CC7",
+    "name": "Comedy Central",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CC7.png"
+  },
+  {
+    "id": "E26",
+    "name": "E! Entertainment HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E26.png"
+  },
+  {
+    "id": "FOC",
+    "name": "FOX Life",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/FOC.png"
+  },
+  {
+    "id": "BHD",
+    "name": "BET",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/BHD.png"
+  },
+  {
+    "id": "MTV",
+    "name": "MTV",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MTV.png"
+  },
+  {
+    "id": "LTE",
+    "name": "Lifetime Entertainment",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/LTE.png"
+  },
+  {
+    "id": "RTK",
+    "name": "CBS Reality",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/RTK.png"
+  },
+  {
+    "id": "T32",
+    "name": "Discovery TLC HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/T32.png"
+  },
+  {
+    "id": "F32",
+    "name": "Discovery Family HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/F32.png"
+  },
+  {
+    "id": "KHD",
+    "name": "Kyk NET HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/KHD.png"
+  },
+  {
+    "id": "K30",
+    "name": "Kyk NET & Kie HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/K30.png"
+  },
+  {
+    "id": "AMM",
+    "name": "Africa Magic Urban",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/AMM.png"
+  },
+  {
+    "id": "AFM",
+    "name": "Africa Magic Family",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/AFM.png"
+  },
+  {
+    "id": "RTA",
+    "name": "Real Time",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/RTA.png"
+  },
+  {
+    "id": "MOH",
+    "name": "Moja Love HD",
+    "icon": null
+  },
+  {
+    "id": "W30",
+    "name": "Mzansi Wethu HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/W30.png"
+  },
+  {
+    "id": "M11",
+    "name": "Zee World HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/M11.png"
+  },
+  {
+    "id": "H26",
+    "name": "Star Life HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/H26.png"
+  },
+  {
+    "id": "E01",
+    "name": "eTV Extra HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E01.png"
+  },
+  {
+    "id": "MN1",
+    "name": "M-Net Plus 1 HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MN1.png"
+  },
+  {
+    "id": "M1D",
+    "name": "M Movies 1",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/M1D.png"
+  },
+  {
+    "id": "MCH",
+    "name": "M Movies 3",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MCH.png"
+  },
+  {
+    "id": "MAP",
+    "name": "M Movies 2",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MAP.png"
+  },
+  {
+    "id": "MCH",
+    "name": "M Movies 3",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MCH.png"
+  },
+  {
+    "id": "MZE",
+    "name": "M Movies 4",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MZE.png"
+  },
+  {
+    "id": "SUH",
+    "name": "Studio Universal HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SUH.png"
+  },
+  {
+    "id": "TND",
+    "name": "TNT Africa HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TND.png"
+  },
+  {
+    "id": "E03",
+    "name": "eMovies HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E03.png"
+  },
+  {
+    "id": "MZE",
+    "name": "M Movies 4",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MZE.png"
+  },
+  {
+    "id": "E05",
+    "name": "eMovies Extra HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E05.png"
+  },
+  {
+    "id": "IA9",
+    "name": "Africa Magic Epic",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/IA9.png"
+  },
+  {
+    "id": "MZH",
+    "name": "Mzansi Magic HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MZH.png"
+  },
+  {
+    "id": "MZB",
+    "name": "Mzansi Bioskop",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MZB.png"
+  },
+  {
+    "id": "19K",
+    "name": "ROK",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/19K.png"
+  },
+  {
+    "id": "VHD",
+    "name": "VIA HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/VHD.png"
+  },
+  {
+    "id": "S30",
+    "name": "Honey",
+    "icon": null
+  },
+  {
+    "id": "BBL",
+    "name": "BBC Lifestyle",
+    "icon": null
+  },
+  {
+    "id": "F26",
+    "name": "Food Network HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/F26.png"
+  },
+  {
+    "id": "HCH",
+    "name": "The Home Channel",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/HCH.png"
+  },
+  {
+    "id": "FTV",
+    "name": "Fashion One",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/FTV.png"
+  },
+  {
+    "id": "TRV",
+    "name": "Travel Channel",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TRV.png"
+  },
+  {
+    "id": "SPI",
+    "name": "Spice TV",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SPI.png"
+  },
+  {
+    "id": "I32",
+    "name": "Discovery ID HD",
+    "icon": null
+  },
+  {
+    "id": "Z26",
+    "name": "Home and Garden TV HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/Z26.png"
+  },
+  {
+    "id": "NA8",
+    "name": "National Geographic Channel",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NA8.png"
+  },
+  {
+    "id": "NGW",
+    "name": "NatGeo Wild",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NGW.png"
+  },
+  {
+    "id": "ETH",
+    "name": "BBC Earth HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/ETH.png"
+  },
+  {
+    "id": "H23",
+    "name": "The History Channel HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/H23.png"
+  },
+  {
+    "id": "ITV",
+    "name": "IGNITION",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/ITV.png"
+  },
+  {
+    "id": "MDH",
+    "name": "Big Brother Mzansi HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MDH.png"
+  },
+  {
+    "id": "SSZ",
+    "name": "BLITZ",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SSZ.png"
+  },
+  {
+    "id": "SH4",
+    "name": "GRANDSTAND",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SH4.png"
+  },
+  {
+    "id": "SH2",
+    "name": "PSL",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SH2.png"
+  },
+  {
+    "id": "TS2",
+    "name": "EPL",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TS2.png"
+  },
+  {
+    "id": "SSH",
+    "name": "LA LIGA",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SSH.png"
+  },
+  {
+    "id": "MSH",
+    "name": "FOOTBALL",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MSH.png"
+  },
+  {
+    "id": "HD6",
+    "name": "VARIETY 1",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/HD6.png"
+  },
+  {
+    "id": "HD5",
+    "name": "VARIETY 2",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/HD5.png"
+  },
+  {
+    "id": "34S",
+    "name": "VARIETY 3",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/34S.png"
+  },
+  {
+    "id": "9HD",
+    "name": "VARIETY 4",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/9HD.png"
+  },
+  {
+    "id": "HD7",
+    "name": "ACTION",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/HD7.png"
+  },
+  {
+    "id": "A11",
+    "name": "RUGBY",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/A11.png"
+  },
+  {
+    "id": "12H",
+    "name": "CRICKET",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/12H.png"
+  },
+  {
+    "id": "XHD",
+    "name": "MAXIMO 1",
+    "icon": null
+  },
+  {
+    "id": "M30",
+    "name": "Ginx eSports HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/M30.png"
+  },
+  {
+    "id": "B1C",
+    "name": "SABC 1 HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/B1C.png"
+  },
+  {
+    "id": "B2C",
+    "name": "SABC 2 HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/B2C.png"
+  },
+  {
+    "id": "B3C",
+    "name": "SABC 3 HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/B3C.png"
+  },
+  {
+    "id": "HDE",
+    "name": "e.TV HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/HDE.png"
+  },
+  {
+    "id": "STV",
+    "name": "Soweto TV",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/STV.png"
+  },
+  {
+    "id": "TVB",
+    "name": "Bay TV",
+    "icon": null
+  },
+  {
+    "id": "1KZ",
+    "name": "1 KZN",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/1KZ.png"
+  },
+  {
+    "id": "TSH",
+    "name": "Tshwane TV",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TSH.png"
+  },
+  {
+    "id": "CTV",
+    "name": "Cape Town TV",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CTV.png"
+  },
+  {
+    "id": "GAU",
+    "name": "GauTV",
+    "icon": null
+  },
+  {
+    "id": "LTV",
+    "name": "Lesotho TV",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/LTV.png"
+  },
+  {
+    "id": "NTA",
+    "name": "NTA I",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NTA.png"
+  },
+  {
+    "id": "CHD",
+    "name": "Cartoon Network HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CHD.png"
+  },
+  {
+    "id": "SO8",
+    "name": "Disney Channel",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SO8.png"
+  },
+  {
+    "id": "FHD",
+    "name": "Dreamworks",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/FHD.png"
+  },
+  {
+    "id": "NIK",
+    "name": "Nickelodeon",
+    "icon": null
+  },
+  {
+    "id": "CBB",
+    "name": "Cbeebies",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CBB.png"
+  },
+  {
+    "id": "NJR",
+    "name": "NickJr",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NJR.png"
+  },
+  {
+    "id": "NTO",
+    "name": "NickTOONS",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NTO.png"
+  },
+  {
+    "id": "DPH",
+    "name": "Disney Junior",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/DPH.png"
+  },
+  {
+    "id": "JJM",
+    "name": "Jim Jam",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/JJM.png"
+  },
+  {
+    "id": "E06",
+    "name": "eToonz",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E06.png"
+  },
+  {
+    "id": "DW6",
+    "name": "PBS Kids",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/DW6.png"
+  },
+  {
+    "id": "E07",
+    "name": "Da Vinci Learn",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E07.png"
+  },
+  {
+    "id": "E11",
+    "name": "Mindset",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E11.png"
+  },
+  {
+    "id": "KNM",
+    "name": "KyKNet Nou",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/KNM.png"
+  },
+  {
+    "id": "OHD",
+    "name": "Channel O HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/OHD.png"
+  },
+  {
+    "id": "MZM",
+    "name": "Mzansi Music",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MZM.png"
+  },
+  {
+    "id": "CSN",
+    "name": "MTV base",
+    "icon": null
+  },
+  {
+    "id": "T26",
+    "name": "TRACE URBAN HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/T26.png"
+  },
+  {
+    "id": "8GT",
+    "name": "TRACE Africa",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/8GT.png"
+  },
+  {
+    "id": "MM2",
+    "name": "Sound City",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MM2.png"
+  },
+  {
+    "id": "GOS",
+    "name": "One Gospel",
+    "icon": null
+  },
+  {
+    "id": "DUM",
+    "name": "Dumisa",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/DUM.png"
+  },
+  {
+    "id": "TBK",
+    "name": "FAITH",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TBK.png"
+  },
+  {
+    "id": "DW5",
+    "name": "Day Star",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/DW5.png"
+  },
+  {
+    "id": "TB1",
+    "name": "TBN",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TB1.png"
+  },
+  {
+    "id": "EMM",
+    "name": "Emmanuel TV",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/EMM.png"
+  },
+  {
+    "id": "BB8",
+    "name": "BBC World News",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/BB8.png"
+  },
+  {
+    "id": "CNN",
+    "name": "CNN International HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CNN.png"
+  },
+  {
+    "id": "S33",
+    "name": "Sky News",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/S33.png"
+  },
+  {
+    "id": "HD2",
+    "name": "eNews Channel Africa",
+    "icon": null
+  },
+  {
+    "id": "SAN",
+    "name": "SABC News",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SAN.png"
+  },
+  {
+    "id": "NZD",
+    "name": "Newzroom Afrika",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NZD.png"
+  },
+  {
+    "id": "ALJ",
+    "name": "Al Jazeera",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/ALJ.png"
+  },
+  {
+    "id": "EVE",
+    "name": "Russia Today",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/EVE.png"
+  },
+  {
+    "id": "PAR",
+    "name": "Parliamentary Service",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/PAR.png"
+  },
+  {
+    "id": "CC9",
+    "name": "CGTN News",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CC9.png"
+  },
+  {
+    "id": "CN8",
+    "name": "CNBC Africa",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CN8.png"
+  },
+  {
+    "id": "BLO",
+    "name": "Bloomberg Television",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/BLO.png"
+  },
+  {
+    "id": "ABC",
+    "name": "Business Day",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/ABC.png"
+  },
+  {
+    "id": "DEE",
+    "name": "NDTV 24x7",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/DEE.png"
+  },
+  {
+    "id": "RAI",
+    "name": "RAI International",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/RAI.png"
+  },
+  {
+    "id": "BVN",
+    "name": "Beste Van Nederlands",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/BVN.png"
+  },
+  {
+    "id": "RTP",
+    "name": "RTPI",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/RTP.png"
+  },
+  {
+    "id": "TVK",
+    "name": "TV5 Monde Afrique",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TVK.png"
+  },
+  {
+    "id": "DW4",
+    "name": "Deutsche Welle",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/DW4.png"
+  },
+  {
+    "id": "SHO",
+    "name": "CCTV 4",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SHO.png"
+  },
+  {
+    "id": "WEA",
+    "name": "Peoples Weather",
+    "icon": null
+  },
+  {
+    "id": "CJH",
+    "name": "CBS Justice HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CJH.png"
+  },
+  {
+    "id": "CSH",
+    "name": "Curiosity Stream",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/CSH.png"
+  },
+  {
+    "id": "EN1",
+    "name": "EuroNews Africa",
+    "icon": null
+  },
+  {
+    "id": "TG2",
+    "name": "Trace Gospel",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/TG2.png"
+  },
+  {
+    "id": "WWE",
+    "name": "WWE",
+    "icon": null
+  },
+  {
+    "id": "MN3",
+    "name": "Tom Cruise",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/MN3.png"
+  },
+  {
+    "id": "E34",
+    "name": "Mzansi Live",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E34.png"
+  },
+  {
+    "id": "E30",
+    "name": "MOTORSPORT",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E30.png"
+  },
+  {
+    "id": "POP",
+    "name": "WildEarth",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/POP.png"
+  },
+  {
+    "id": "FND",
+    "name": "FliekNet HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/FND.png"
+  },
+  {
+    "id": "I26",
+    "name": "ESPN HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/I26.png"
+  },
+  {
+    "id": "SDN",
+    "name": "ESPN 2 HD",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SDN.png"
+  },
+  {
+    "id": "EDH",
+    "name": "GOLF",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/EDH.png"
+  },
+  {
+    "id": "S34",
+    "name": "TENNIS",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/S34.png"
+  },
+  {
+    "id": "FS1",
+    "name": "TLNovelas",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/FS1.png"
+  },
+  {
+    "id": "1P2",
+    "name": "African Easter",
+    "icon": null
+  }
+]
