@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="dstv.com">
   <channels>
-    <channel lang="en" xmltv_id="HDT" site_id="zaf#101" tag="HDT">M-Net HD</channel>
+    <channel lang="en" xmltv_id="HDT" site_id="zaf#101">M-Net HD</channel>
+    <channel lang="en" xmltv_id="A11" site_id="zaf#211">SS RUGBY</channel>
   </channels>
 </site>
