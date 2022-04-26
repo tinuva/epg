@@ -23,12 +23,12 @@ async function main() {
       programs = programs.concat(itemPrograms)
 
       if (channels[item.channel.xmltv_id]) continue
-      const channel = true //api.channels.find({ id: item.channel.xmltv_id })
+      const channel = api.channels.find({ id: item.channel.xmltv_id })
       if (channel) {
         channels[item.channel.xmltv_id] = {
           xmltv_id: item.channel.xmltv_id,
           name: item.channel.display_name,
-          logo: channel.logo,
+          logo: channel.icon,
           site: item.channel.site
         }
       }
