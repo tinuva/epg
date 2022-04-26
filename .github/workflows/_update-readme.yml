@@ -43,7 +43,7 @@ jobs:
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
-          destination_branch: 'master'
+          destination_branch: 'main'
           pr_title: '[Bot] Daily update'
           pr_body: |
             This pull request is created via [update-readme][1] workflow.
