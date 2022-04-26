@@ -54,8 +54,8 @@ async function generateCountriesTable(items = []) {
       flag: country.flag,
       name: country.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
-      status: `<a href="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml/badge.svg" alt="${item.site}" style="max-width: 100%;"></a>`
+      epg: `<code>https://tinuva.github.io/epg/guides/${item.group}.epg.xml</code>`,
+      status: `<a href="https://github.com/tinuva/epg/actions/workflows/${item.site}.yml"><img src="https://github.com/tinuva/epg/actions/workflows/${item.site}.yml/badge.svg" alt="${item.site}" style="max-width: 100%;"></a>`
     })
   }
 
