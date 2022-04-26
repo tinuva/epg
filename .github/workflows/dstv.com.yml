@@ -13,5 +13,6 @@ jobs:
     with:
       site: ${{github.workflow}}
     secrets:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      # APP_ID: ${{ secrets.APP_ID }}
+      # APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
