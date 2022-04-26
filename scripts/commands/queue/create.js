@@ -51,7 +51,7 @@ async function createQueue() {
         //logger.info(`Item ${item.xmltv_id}`)
         if (!item.site || !item.xmltv_id) continue
         const channel = api.channels.find({ id: item.xmltv_id })
-        //logger.info(`Channel ${channel}`)
+        logger.info(`Channel ${channel}`)
         if (!channel) continue
         for (const d of dates) {
           const dString = d.toJSON()
