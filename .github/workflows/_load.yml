@@ -5,6 +5,9 @@ on:
       site:
         required: true
         type: string
+    secrets:
+      ACCESS_TOKEN:
+         required: true
     # secrets:
     #   APP_ID:
     #     required: true
