@@ -13,8 +13,8 @@ class API {
   async load() {
     console.log(`load: This Filepath ${this.filepath}`)
     const data = await file.read(this.filepath)
-    console.log(`load: data `)
-    console.log(data)
+    //console.log(`load: data `)
+    //console.log(data)
 
     this.collection = JSON.parse(data)
   }
