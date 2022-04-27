@@ -5,16 +5,11 @@ const DATA_DIR = process.env.DATA_DIR || './scripts/data'
 
 class API {
   constructor(filepath) {
-    console.log(`constructor: Filepath ${filepath}`)
     this.filepath = file.resolve(filepath)
-    console.log(`constructor: This Filepath ${this.filepath}`)
   }
 
   async load() {
-    console.log(`load: This Filepath ${this.filepath}`)
     const data = await file.read(this.filepath)
-    //console.log(`load: data `)
-    //console.log(data)
 
     this.collection = JSON.parse(data)
   }

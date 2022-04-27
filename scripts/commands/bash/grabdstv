@@ -1,5 +1,5 @@
 #!/bin/bash
 
 curl 'https://www.dstv.com/umbraco/api/TvGuide/GetChannels?country=zaf&unit=dstv' \
-    | jq '[.Channels[] | .["id"] = .Tag | .["name"] = .Name | ."icon" = .Logo | del(.Tag, .Name, .Logo, .Number, .ChannelLogoDark, .DStvNowLink, .ChannelDetail, .ChannelLogo) ]' \
+    | jq '[.Channels[] | .["id"] = .Tag | .["name"] = .Name | ."icon" = .Logo | del(.Tag, .Name, .Logo, .ChannelLogoDark, .DStvNowLink, .ChannelDetail, .ChannelLogo) ]' \
     > scripts/data/channels.json
