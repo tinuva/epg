@@ -54,6 +54,7 @@ async function main() {
 
       const result = {
         _qid: item._id,
+        item: item,
         programs: data.programs,
         error: err ? err.message : null
       }
