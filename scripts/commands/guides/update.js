@@ -29,12 +29,13 @@ async function main() {
           xmltv_id: item.channel.xmltv_id,
           name: item.channel.display_name,
           logo: channel.icon,
-          site: item.channel.site
+          site: item.channel.site,
+          number: channel.Number
         }
       }
     }
     channels = Object.values(channels)
-    //channels = _.sortBy(channels, 'xmltv_id')
+    channels = _.sortBy(channels, 'number')
     programs = _.sortBy(programs, ['channel', 'start'])
     total += programs.length
 
