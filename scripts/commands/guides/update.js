@@ -34,7 +34,7 @@ async function main() {
       }
     }
     channels = Object.values(channels)
-    channels = _.sortBy(channels, 'xmltv_id')
+    //channels = _.sortBy(channels, 'xmltv_id')
     programs = _.sortBy(programs, ['channel', 'start'])
     total += programs.length
 
