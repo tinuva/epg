@@ -41,7 +41,8 @@ async function main() {
 
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     logger.info(`Creating "${filepath}"...`)
-    const output = grabber.convertToXMLTV({ channels, programs })
+    const output = unescapeHTML(grabber.convertToXMLTV({ channels, programs }))
+    console.log(output)
     await file.create(filepath, output)
     const compressed = await zip.compress(output)
     await file.create(filepath + '.gz', compressed)
@@ -72,6 +73,39 @@ function groupByGroup(items = []) {
 
   return groups
 }
+
+var htmlEntities = {
+  nbsp: ' ',
+  cent: '¢',
+  pound: '£',
+  yen: '¥',
+  euro: '€',
+  copy: '©',
+  reg: '®',
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  amp: '&',
+  apos: '\''
+};
+
+function unescapeHTML(str) {
+  return str.replace(/\&([^;]+);/g, function (entity, entityCode) {
+      var match;
+
+      if (entityCode in htmlEntities) {
+          return htmlEntities[entityCode];
+          /*eslint no-cond-assign: 0*/
+      } else if (match = entityCode.match(/^#x([\da-fA-F]+)$/)) {
+          return String.fromCharCode(parseInt(match[1], 16));
+          /*eslint no-cond-assign: 0*/
+      } else if (match = entityCode.match(/^#(\d+)$/)) {
+          return String.fromCharCode(~~match[1]);
+      } else {
+          return entity;
+      }
+  });
+};
 
 async function loadQueue() {
   logger.info('Loading queue...')
