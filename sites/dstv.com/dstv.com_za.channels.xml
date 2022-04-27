@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<site>
+<site site="dstv.com">
   <channels lang="en" xmltv_id="HDT" site_id="zaf#101">M-Net HD</channels>
   <channels lang="en" xmltv_id="VAM" site_id="zaf#103">1 Magic HD</channels>
   <channels lang="en" xmltv_id="MFH" site_id="zaf#115">ME Channel</channels>

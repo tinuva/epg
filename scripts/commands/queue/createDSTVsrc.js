@@ -30,10 +30,7 @@ async function main() {
     try {
       console.log(filepath)
       const dir = file.dirname(filepath)
-      const {
-        site,
-        channels: items
-      } = await parser.parseChannels(filepath)
+      const {site, channels: items} = await parser.parseChannels(filepath)
       if (!site) continue
       const configPath = `${dir}/${site}.config.js`
       const config = require(file.resolve(configPath))
@@ -51,20 +48,18 @@ async function main() {
 
       var obj = {
         site: {
+          '@site': 'dstv.com',
           channels: [
             Object.values(xmlobj)
           ]
         }
       };
+      //console.log(obj)
 
-      const xml = builder.create(obj).end({
-        pretty: true
-      });
-
-      await file.create(filepath, xml)
-
+      const xml = builder.create(obj).end({pretty: true});
       //console.log(xml)
 
+      await file.create(filepath, xml)
 
     } catch (err) {
       console.error(err)
