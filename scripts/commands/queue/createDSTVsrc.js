@@ -49,9 +49,11 @@ async function main() {
       var obj = {
         site: {
           '@site': 'dstv.com',
-          channels: [
-            Object.values(xmlobj)
-          ]
+          channels: {
+            channel: [
+              Object.values(xmlobj)
+            ]
+          }
         }
       };
       //console.log(obj)
@@ -60,6 +62,7 @@ async function main() {
       //console.log(xml)
 
       await file.create(filepath, xml)
+
 
     } catch (err) {
       console.error(err)
