@@ -27,7 +27,7 @@ async function main() {
   await file.create(CLUSTER_PATH)
   await db.queue.load()
   let items = await db.queue.find({ cluster_id: options.clusterId })
-  items = _.orderBy(items, [i => i.channel.xmltv_id.toLowerCase(), 'date'])
+  items = _.orderBy(items, [i => i.channel.site_id.toLowerCase(), 'date'])
   const total = items.length
 
   logger.info('Loading...')
@@ -46,8 +46,8 @@ async function main() {
     await grabber.grab(item.channel, item.date, async (data, err) => {
       logger.info(
         `[${i}/${total}] ${item.channel.site} (${item.channel.lang}) - ${
-          item.channel.xmltv_id
-        } - ${data.date.format('MMM D, YYYY')} (${data.programs.length} programs)`
+          item.channel.xmltv_id} - ${item.channel.site_id} - ${item.channel.display_name} - ${
+           data.date.format('MMM D, YYYY')} (${data.programs.length} programs)`
       )
 
       if (err) logger.error(err.message)
