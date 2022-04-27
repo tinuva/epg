@@ -105,7 +105,6 @@ async function saveToDatabase(items = []) {
   }
 
   queue = _.sortBy(queue, ['channel.lang', 'channel.site_id', 'date'])
-  console.log(queue)
   await db.queue.insert(queue)
 }
 
