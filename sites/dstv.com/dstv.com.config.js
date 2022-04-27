@@ -50,6 +50,25 @@ module.exports = {
         name: item.Name
       }
     })
+  },
+  async rawChannels( country ) {
+    const data = await axios
+      .get(
+        `https://www.dstv.com/umbraco/api/TvGuide/GetChannels?country=${country}&unit=dstv`
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.Channels.map(item => {
+      return {
+        id: item.Number,
+        country: country,
+        site_id: `${country}#${item.Number}`,
+        name: item.Name,
+        tag: item.Tag,
+        icon: item.Logo
+      }
+    })
   }
 }
 

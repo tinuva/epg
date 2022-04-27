@@ -1,7 +1,152 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site site="dstv.com">
-  <channels>
-    <channel lang="en" xmltv_id="HDT" site_id="zaf#101">M-Net HD</channel>
-    <channel lang="en" xmltv_id="A11" site_id="zaf#211">SS RUGBY</channel>
-  </channels>
+<?xml version="1.0"?>
+<site>
+  <channels lang="en" xmltv_id="HDT" site_id="zaf#101">M-Net HD</channels>
+  <channels lang="en" xmltv_id="VAM" site_id="zaf#103">1 Magic HD</channels>
+  <channels lang="en" xmltv_id="MFH" site_id="zaf#115">ME Channel</channels>
+  <channels lang="en" xmltv_id="V30" site_id="zaf#116">VUZU HD</channels>
+  <channels lang="en" xmltv_id="UHD" site_id="zaf#117">Universal TV HD</channels>
+  <channels lang="en" xmltv_id="TEL" site_id="zaf#118">TeleMundo English</channels>
+  <channels lang="en" xmltv_id="B23" site_id="zaf#119">BBC First HD</channels>
+  <channels lang="en" xmltv_id="B26" site_id="zaf#120">BBC Brit HD</channels>
+  <channels lang="en" xmltv_id="DHD" site_id="zaf#121">Discovery Channel HD</channels>
+  <channels lang="en" xmltv_id="CC7" site_id="zaf#122">Comedy Central</channels>
+  <channels lang="en" xmltv_id="E26" site_id="zaf#124">E! Entertainment HD</channels>
+  <channels lang="en" xmltv_id="FOC" site_id="zaf#126">FOX Life</channels>
+  <channels lang="en" xmltv_id="BHD" site_id="zaf#129">BET</channels>
+  <channels lang="en" xmltv_id="MTV" site_id="zaf#130">MTV</channels>
+  <channels lang="en" xmltv_id="LTE" site_id="zaf#131">Lifetime Entertainment</channels>
+  <channels lang="en" xmltv_id="RTK" site_id="zaf#132">CBS Reality</channels>
+  <channels lang="en" xmltv_id="T32" site_id="zaf#135">Discovery TLC HD</channels>
+  <channels lang="en" xmltv_id="F32" site_id="zaf#136">Discovery Family HD</channels>
+  <channels lang="en" xmltv_id="KHD" site_id="zaf#144">Kyk NET HD</channels>
+  <channels lang="en" xmltv_id="K30" site_id="zaf#145">Kyk NET &amp; Kie HD</channels>
+  <channels lang="en" xmltv_id="AMM" site_id="zaf#153">Africa Magic Urban</channels>
+  <channels lang="en" xmltv_id="AFM" site_id="zaf#154">Africa Magic Family</channels>
+  <channels lang="en" xmltv_id="RTA" site_id="zaf#155">Real Time</channels>
+  <channels lang="en" xmltv_id="MOH" site_id="zaf#157">Moja Love HD</channels>
+  <channels lang="en" xmltv_id="W30" site_id="zaf#163">Mzansi Wethu HD</channels>
+  <channels lang="en" xmltv_id="M11" site_id="zaf#166">Zee World HD</channels>
+  <channels lang="en" xmltv_id="H26" site_id="zaf#167">Star Life HD</channels>
+  <channels lang="en" xmltv_id="E01" site_id="zaf#195">eTV Extra HD</channels>
+  <channels lang="en" xmltv_id="MN1" site_id="zaf#901">M-Net Plus 1 HD</channels>
+  <channels lang="en" xmltv_id="M1D" site_id="zaf#104">M Movies 1</channels>
+  <channels lang="en" xmltv_id="MCH" site_id="zaf#105">M Movies 3</channels>
+  <channels lang="en" xmltv_id="MAP" site_id="zaf#106">M Movies 2</channels>
+  <channels lang="en" xmltv_id="MCH" site_id="zaf#107">M Movies 3</channels>
+  <channels lang="en" xmltv_id="MZE" site_id="zaf#108">M Movies 4</channels>
+  <channels lang="en" xmltv_id="SUH" site_id="zaf#112">Studio Universal HD</channels>
+  <channels lang="en" xmltv_id="TND" site_id="zaf#137">TNT Africa HD</channels>
+  <channels lang="en" xmltv_id="E03" site_id="zaf#138">eMovies HD</channels>
+  <channels lang="en" xmltv_id="MZE" site_id="zaf#139">M Movies 4</channels>
+  <channels lang="en" xmltv_id="E05" site_id="zaf#140">eMovies Extra HD</channels>
+  <channels lang="en" xmltv_id="IA9" site_id="zaf#152">Africa Magic Epic</channels>
+  <channels lang="en" xmltv_id="MZH" site_id="zaf#161">Mzansi Magic HD</channels>
+  <channels lang="en" xmltv_id="MZB" site_id="zaf#164">Mzansi Bioskop</channels>
+  <channels lang="en" xmltv_id="19K" site_id="zaf#168">ROK</channels>
+  <channels lang="en" xmltv_id="VHD" site_id="zaf#147">VIA HD</channels>
+  <channels lang="en" xmltv_id="S30" site_id="zaf#173">Honey</channels>
+  <channels lang="en" xmltv_id="BBL" site_id="zaf#174">BBC Lifestyle</channels>
+  <channels lang="en" xmltv_id="F26" site_id="zaf#175">Food Network HD</channels>
+  <channels lang="en" xmltv_id="HCH" site_id="zaf#176">The Home Channel</channels>
+  <channels lang="en" xmltv_id="FTV" site_id="zaf#178">Fashion One</channels>
+  <channels lang="en" xmltv_id="TRV" site_id="zaf#179">Travel Channel</channels>
+  <channels lang="en" xmltv_id="SPI" site_id="zaf#190">Spice TV</channels>
+  <channels lang="en" xmltv_id="I32" site_id="zaf#171">Investigation Discovery (ID)</channels>
+  <channels lang="en" xmltv_id="Z26" site_id="zaf#177">Home and Garden TV HD</channels>
+  <channels lang="en" xmltv_id="NA8" site_id="zaf#181">National Geographic Channel</channels>
+  <channels lang="en" xmltv_id="NGW" site_id="zaf#182">NatGeo Wild</channels>
+  <channels lang="en" xmltv_id="ETH" site_id="zaf#184">BBC Earth HD</channels>
+  <channels lang="en" xmltv_id="H23" site_id="zaf#186">The History Channel HD</channels>
+  <channels lang="en" xmltv_id="ITV" site_id="zaf#189">IGNITION</channels>
+  <channels lang="en" xmltv_id="MDH" site_id="zaf#198">Big Brother Mzansi HD</channels>
+  <channels lang="en" xmltv_id="SSZ" site_id="zaf#200">BLITZ</channels>
+  <channels lang="en" xmltv_id="SH4" site_id="zaf#201">GRANDSTAND</channels>
+  <channels lang="en" xmltv_id="SH2" site_id="zaf#202">PSL</channels>
+  <channels lang="en" xmltv_id="TS2" site_id="zaf#203">EPL</channels>
+  <channels lang="en" xmltv_id="SSH" site_id="zaf#204">LA LIGA</channels>
+  <channels lang="en" xmltv_id="MSH" site_id="zaf#205">FOOTBALL</channels>
+  <channels lang="en" xmltv_id="HD6" site_id="zaf#206">VARIETY 1</channels>
+  <channels lang="en" xmltv_id="HD5" site_id="zaf#207">VARIETY 2</channels>
+  <channels lang="en" xmltv_id="34S" site_id="zaf#208">VARIETY 3</channels>
+  <channels lang="en" xmltv_id="9HD" site_id="zaf#209">VARIETY 4</channels>
+  <channels lang="en" xmltv_id="HD7" site_id="zaf#210">ACTION</channels>
+  <channels lang="en" xmltv_id="A11" site_id="zaf#211">RUGBY</channels>
+  <channels lang="en" xmltv_id="12H" site_id="zaf#212">CRICKET</channels>
+  <channels lang="en" xmltv_id="XHD" site_id="zaf#241">MAXIMO 1</channels>
+  <channels lang="en" xmltv_id="M30" site_id="zaf#127">Ginx eSports HD</channels>
+  <channels lang="en" xmltv_id="B1C" site_id="zaf#191">SABC 1 HD</channels>
+  <channels lang="en" xmltv_id="B2C" site_id="zaf#192">SABC 2 HD</channels>
+  <channels lang="en" xmltv_id="B3C" site_id="zaf#193">SABC 3 HD</channels>
+  <channels lang="en" xmltv_id="HDE" site_id="zaf#194">e.TV HD</channels>
+  <channels lang="en" xmltv_id="STV" site_id="zaf#251">Soweto TV</channels>
+  <channels lang="en" xmltv_id="TVB" site_id="zaf#260">Bay TV</channels>
+  <channels lang="en" xmltv_id="1KZ" site_id="zaf#261">1 KZN</channels>
+  <channels lang="en" xmltv_id="TSH" site_id="zaf#262">Tshwane TV</channels>
+  <channels lang="en" xmltv_id="CTV" site_id="zaf#263">Cape Town TV</channels>
+  <channels lang="en" xmltv_id="GAU" site_id="zaf#265">GauTV</channels>
+  <channels lang="en" xmltv_id="LTV" site_id="zaf#292">Lesotho TV</channels>
+  <channels lang="en" xmltv_id="NTA" site_id="zaf#299">NTA I</channels>
+  <channels lang="en" xmltv_id="CHD" site_id="zaf#301">Cartoon Network HD</channels>
+  <channels lang="en" xmltv_id="SO8" site_id="zaf#303">Disney Channel</channels>
+  <channels lang="en" xmltv_id="FHD" site_id="zaf#304">Dreamworks</channels>
+  <channels lang="en" xmltv_id="NIK" site_id="zaf#305">Nickelodeon</channels>
+  <channels lang="en" xmltv_id="CBB" site_id="zaf#306">Cbeebies</channels>
+  <channels lang="en" xmltv_id="NJR" site_id="zaf#307">NickJr</channels>
+  <channels lang="en" xmltv_id="NTO" site_id="zaf#308">NickTOONS</channels>
+  <channels lang="en" xmltv_id="DPH" site_id="zaf#309">Disney Junior</channels>
+  <channels lang="en" xmltv_id="JJM" site_id="zaf#310">Jim Jam</channels>
+  <channels lang="en" xmltv_id="E06" site_id="zaf#311">eToonz</channels>
+  <channels lang="en" xmltv_id="DW6" site_id="zaf#313">PBS Kids</channels>
+  <channels lang="en" xmltv_id="E07" site_id="zaf#318">Da Vinci Learn</channels>
+  <channels lang="en" xmltv_id="E11" site_id="zaf#319">Mindset</channels>
+  <channels lang="en" xmltv_id="KNM" site_id="zaf#146">KyKNet Nou</channels>
+  <channels lang="en" xmltv_id="OHD" site_id="zaf#320">Channel O HD</channels>
+  <channels lang="en" xmltv_id="MZM" site_id="zaf#321">Mzansi Music</channels>
+  <channels lang="en" xmltv_id="CSN" site_id="zaf#322">MTV base</channels>
+  <channels lang="en" xmltv_id="T26" site_id="zaf#325">TRACE URBAN HD</channels>
+  <channels lang="en" xmltv_id="8GT" site_id="zaf#326">TRACE Africa</channels>
+  <channels lang="en" xmltv_id="MM2" site_id="zaf#327">Sound City</channels>
+  <channels lang="en" xmltv_id="GOS" site_id="zaf#331">One Gospel</channels>
+  <channels lang="en" xmltv_id="DUM" site_id="zaf#340">Dumisa</channels>
+  <channels lang="en" xmltv_id="TBK" site_id="zaf#341">FAITH</channels>
+  <channels lang="en" xmltv_id="DW5" site_id="zaf#342">Day Star</channels>
+  <channels lang="en" xmltv_id="TB1" site_id="zaf#343">TBN</channels>
+  <channels lang="en" xmltv_id="EMM" site_id="zaf#390">Emmanuel TV</channels>
+  <channels lang="en" xmltv_id="BB8" site_id="zaf#400">BBC World News</channels>
+  <channels lang="en" xmltv_id="CNN" site_id="zaf#401">CNN International HD</channels>
+  <channels lang="en" xmltv_id="S33" site_id="zaf#402">Sky News</channels>
+  <channels lang="en" xmltv_id="HD2" site_id="zaf#403">eNews Channel Africa</channels>
+  <channels lang="en" xmltv_id="SAN" site_id="zaf#404">SABC News</channels>
+  <channels lang="en" xmltv_id="NZD" site_id="zaf#405">Newzroom Afrika</channels>
+  <channels lang="en" xmltv_id="ALJ" site_id="zaf#406">Al Jazeera</channels>
+  <channels lang="en" xmltv_id="EVE" site_id="zaf#407">Russia Today</channels>
+  <channels lang="en" xmltv_id="PAR" site_id="zaf#408">Parliamentary Service</channels>
+  <channels lang="en" xmltv_id="CC9" site_id="zaf#409">CGTN News</channels>
+  <channels lang="en" xmltv_id="CN8" site_id="zaf#410">CNBC Africa</channels>
+  <channels lang="en" xmltv_id="BLO" site_id="zaf#411">Bloomberg Television</channels>
+  <channels lang="en" xmltv_id="ABC" site_id="zaf#412">Business Day</channels>
+  <channels lang="en" xmltv_id="DEE" site_id="zaf#413">NDTV 24x7</channels>
+  <channels lang="en" xmltv_id="RAI" site_id="zaf#430">RAI International</channels>
+  <channels lang="en" xmltv_id="BVN" site_id="zaf#431">Beste Van Nederlands</channels>
+  <channels lang="en" xmltv_id="RTP" site_id="zaf#435">RTPI</channels>
+  <channels lang="en" xmltv_id="TVK" site_id="zaf#437">TV5 Monde Afrique</channels>
+  <channels lang="en" xmltv_id="DW4" site_id="zaf#446">Deutsche Welle</channels>
+  <channels lang="en" xmltv_id="SHO" site_id="zaf#447">CCTV 4</channels>
+  <channels lang="en" xmltv_id="WEA" site_id="zaf#180">Peoples Weather</channels>
+  <channels lang="en" xmltv_id="CJH" site_id="zaf#170">CBS Justice HD</channels>
+  <channels lang="en" xmltv_id="CSH" site_id="zaf#185">Curiosity Stream</channels>
+  <channels lang="en" xmltv_id="EN1" site_id="zaf#414">EuroNews Africa</channels>
+  <channels lang="en" xmltv_id="TG2" site_id="zaf#332">Trace Gospel</channels>
+  <channels lang="en" xmltv_id="WWE" site_id="zaf#236">WWE</channels>
+  <channels lang="en" xmltv_id="MN3" site_id="zaf#109">Tom Cruise</channels>
+  <channels lang="en" xmltv_id="E34" site_id="zaf#113">Mzansi Live</channels>
+  <channels lang="en" xmltv_id="E30" site_id="zaf#215">MOTORSPORT</channels>
+  <channels lang="en" xmltv_id="POP" site_id="zaf#183">WildEarth</channels>
+  <channels lang="en" xmltv_id="FND" site_id="zaf#149">FliekNet HD</channels>
+  <channels lang="en" xmltv_id="I26" site_id="zaf#218">ESPN HD</channels>
+  <channels lang="en" xmltv_id="SDN" site_id="zaf#219">ESPN 2 HD</channels>
+  <channels lang="en" xmltv_id="EDH" site_id="zaf#213">GOLF</channels>
+  <channels lang="en" xmltv_id="S34" site_id="zaf#214">TENNIS</channels>
+  <channels lang="en" xmltv_id="FS1" site_id="zaf#133">TLNovelas</channels>
+  <channels lang="en" xmltv_id="1P2" site_id="zaf#344">African Easter</channels>
 </site>
