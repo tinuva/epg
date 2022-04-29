@@ -39,8 +39,9 @@ jobs:
       #     app_id: ${{ secrets.APP_ID }}
       #     private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: repo-sync/pull-request@v2
-        #if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'refs/heads/main' }}
         id: pull-request
+        continue-on-error: true
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
@@ -51,7 +52,8 @@ jobs:
 
             [1]: https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}
       - uses: juliangruber/merge-pull-request-action@v1
-        #if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'refs/heads/main' }}
+        continue-on-error: true
         with:
           github-token: ${{ secrets.ACCESS_TOKEN }}
           number: ${{ steps.pull-request.outputs.pr_number }}
