@@ -26,6 +26,7 @@ jobs:
       - run: npm run readme:update
       - name: Commit Changes
         if: ${{ !env.ACT }}
+        continue-on-error: true
         run: |
           git add README.md
           git commit -m "[Bot] Update README.md"
