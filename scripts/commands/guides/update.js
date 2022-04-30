@@ -81,10 +81,10 @@ var htmlEntities = {
   euro: '€',
   copy: '©',
   reg: '®',
-  lt: '<',
-  gt: '>',
+  //lt: '<',
+  //gt: '>',
   quot: '"',
-  amp: '&',
+  //amp: '&',
   apos: '\''
 };
 
