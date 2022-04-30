@@ -41,7 +41,6 @@ async function main() {
 
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     const output = unescapeHTML(grabber.convertToXMLTV({ channels, programs }))
-    console.log(output)
     await file.create(filepath, output)
     const compressed = await zip.compress(output)
     await file.create(filepath + '.gz', compressed)
