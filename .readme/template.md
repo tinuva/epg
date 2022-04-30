@@ -4,8 +4,6 @@ This project was originally a fork of the [iptv-org EPG project](https://github.
 
 ![Project Maintenance][maintenance-shield]
 [![License][license-shield]](LICENSE.md)
-
-[![GitHub Actions][actions-shield]][actions]
 [![GitHub Activity][commits-shield]][commits]
 [![GitHub Last Commit][last-commit-shield]][commits]
 
@@ -26,17 +24,9 @@ To load a program guide, all you need to do is copy the link to one or more of t
 
 To use a compressed version of the files, add `.gz` to the end of the filename.
 
-## API
-
-The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
-
-## Resources
-
-Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
-
 ## Contribution
 
-If you find a bug or want to contribute to the code or documentation, you can help by submitting an [issue](https://github.com/iptv-org/epg/issues) or a [pull request](https://github.com/iptv-org/epg/pulls).
+If you find a bug or want to contribute to the code or documentation, you can help by submitting an [issue] or a [pull-request]
 
 [commits-shield]: https://img.shields.io/github/commit-activity/y/tinuva/epg.svg
 [commits]: https://github.com/tinuva/epg/commits/master
@@ -45,6 +35,7 @@ If you find a bug or want to contribute to the code or documentation, you can he
 [actions]: https://github.com/tinuva/epg/actions
 [home-assistant]: https://home-assistant.io
 [issue]: https://github.com/tinuva/epg/issues
+[pull-request]:(https://github.com/tinuva/epg/pulls)]
 [license-shield]: https://img.shields.io/github/license/tinuva/epg.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [last-commit-shield]: https://img.shields.io/github/last-commit/tinuva/epg.svg
