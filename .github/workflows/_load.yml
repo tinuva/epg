@@ -25,9 +25,13 @@ jobs:
       #   with:
       #     app_id: ${{ secrets.APP_ID }}
       #     private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: FedericoCarboni/setup-ffmpeg@v1
-        # with:
-        #   token: ${{ steps.create-ffmpeg-token.outputs.token }}
+      - uses: FedericoCarboni/setup-ffmpeg@v2
+        with:
+          # Not strictly necessary, but it may prevent rate limit
+          # errors especially on GitHub-hosted macos machines.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # with:
+          #   token: ${{ steps.create-ffmpeg-token.outputs.token }}
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
         with:
