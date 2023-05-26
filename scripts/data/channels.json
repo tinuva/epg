@@ -319,14 +319,14 @@
   },
   {
     "Number": "181",
-    "id": "NA8",
-    "name": "National Geographic Channel",
+    "id": "WHD",
+    "name": "National Geographic",
     "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NA8.png"
   },
   {
     "Number": "182",
-    "id": "NGW",
-    "name": "NatGeo Wild",
+    "id": "N26",
+    "name": "National Geographic WILD",
     "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/NGW.png"
   },
   {
@@ -842,7 +842,7 @@
   {
     "Number": "215",
     "id": "E30",
-    "name": "MOTORSPORT",
+    "name": "SS Motorsport",
     "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/E30.png"
   },
   {
@@ -892,5 +892,23 @@
     "id": "1P2",
     "name": "African Easter",
     "icon": null
+  },
+  {
+    "Number": "216",
+    "id": "35L",
+    "name": "SuperSport Schools",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/35L.png"
+  },
+  {
+    "Number": "240",
+    "id": "SKY",
+    "name": "Racing 240",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SKY.png"
+  },
+  {
+    "Number": "243",
+    "id": "SPY",
+    "name": "SuperSport Play",
+    "icon": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/SPY.png"
   }
 ]
