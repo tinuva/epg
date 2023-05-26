@@ -54,8 +54,8 @@
     <channel lang="en" xmltv_id="SPI" site_id="zaf#190">Spice TV</channel>
     <channel lang="en" xmltv_id="I32" site_id="zaf#171">Investigation Discovery (ID)</channel>
     <channel lang="en" xmltv_id="Z26" site_id="zaf#177">Home and Garden TV HD</channel>
-    <channel lang="en" xmltv_id="NA8" site_id="zaf#181">National Geographic Channel</channel>
-    <channel lang="en" xmltv_id="NGW" site_id="zaf#182">NatGeo Wild</channel>
+    <channel lang="en" xmltv_id="WHD" site_id="zaf#181">National Geographic</channel>
+    <channel lang="en" xmltv_id="N26" site_id="zaf#182">National Geographic WILD</channel>
     <channel lang="en" xmltv_id="ETH" site_id="zaf#184">BBC Earth HD</channel>
     <channel lang="en" xmltv_id="H23" site_id="zaf#186">The History Channel HD</channel>
     <channel lang="en" xmltv_id="ITV" site_id="zaf#189">IGNITION</channel>
@@ -141,7 +141,10 @@
     <channel lang="en" xmltv_id="WWE" site_id="zaf#236">WWE</channel>
     <channel lang="en" xmltv_id="MN3" site_id="zaf#109">Tom Cruise</channel>
     <channel lang="en" xmltv_id="E34" site_id="zaf#113">Mzansi Live</channel>
-    <channel lang="en" xmltv_id="E30" site_id="zaf#215">MOTORSPORT</channel>
+    <channel lang="en" xmltv_id="E30" site_id="zaf#215">SS Motorsport</channel>
+    <channel lang="en" xmltv_id="35L" site_id="zaf#216">SuperSport Schools</channel>
+    <channel lang="en" xmltv_id="SKY" site_id="zaf#240">Racing 240</channel>
+    <channel lang="en" xmltv_id="SPY" site_id="zaf#243">SuperSport Play</channel>
     <channel lang="en" xmltv_id="POP" site_id="zaf#183">WildEarth</channel>
     <channel lang="en" xmltv_id="FND" site_id="zaf#149">FliekNet HD</channel>
     <channel lang="en" xmltv_id="I26" site_id="zaf#218">ESPN HD</channel>
