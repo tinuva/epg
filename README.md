@@ -25,7 +25,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><th>Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Channels</th><th>EPG</th><th>Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
   </thead>
   <tbody>
-    <tr><td valign="top">🇿🇦&nbsp;South Africa</td><td align="right">149</td><td nowrap><code>https://tinuva.github.io/epg/guides/za/dstv.com.epg.xml</code></td><td><a href="https://github.com/tinuva/epg/actions/workflows/dstv.com.yml"><img src="https://github.com/tinuva/epg/actions/workflows/dstv.com.yml/badge.svg" alt="dstv.com" style="max-width: 100%;"></a></td></tr>
+    <tr><td valign="top">🇿🇦&nbsp;South Africa</td><td align="right">152</td><td nowrap><code>https://tinuva.github.io/epg/guides/za/dstv.com.epg.xml</code></td><td><a href="https://github.com/tinuva/epg/actions/workflows/dstv.com.yml"><img src="https://github.com/tinuva/epg/actions/workflows/dstv.com.yml/badge.svg" alt="dstv.com" style="max-width: 100%;"></a></td></tr>
   </tbody>
 </table>
 
