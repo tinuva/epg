@@ -41,9 +41,9 @@ jobs:
       - name: Download data from API
         run: |
           mkdir -p scripts/data
-          echo disabled curl -L -o scripts/data/channels.json https://raw.githubusercontent.com/tinuva/epg/main/scripts/data/channels.json
+          #echo disabled curl -L -o scripts/data/channels.json https://raw.githubusercontent.com/tinuva/epg/main/scripts/data/channels.json
           curl -L -o scripts/data/input.json 'https://www.dstv.com/umbraco/api/TvGuide/GetChannels?country=zaf&unit=dstv'
-          cat scripts/data/input.json  | jq -r '.Channels[] | {Number, id: .Tag, name: .Name, icon: .Logo}' | scripts/data/channels.json
+          cat scripts/data/input.json  | jq -r '.Channels[] | {Number, id: .Tag, name: .Name, icon: .Logo}' > scripts/data/channels.json
           ls -lsah scripts/data
           echo '<?xml version="1.0"?>' > sites/dstv.com/dstv.com_za.channels.xml
           echo '<site site="dstv.com">' >> sites/dstv.com/dstv.com_za.channels.xml
