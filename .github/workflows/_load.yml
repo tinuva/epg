@@ -50,6 +50,8 @@ jobs:
           jq -r '.Channels[] | "<channel lang=\"en\" xmltv_id=\"\(.Tag)\" site_id=\"zaf#\(.Number)\">\(.Name)</channel>"' scripts/data/input.json >> sites/dstv.com/dstv.com_za.channels.xml
           echo '</channels>' >> sites/dstv.com/dstv.com_za.channels.xml
           echo '</site>' >> sites/dstv.com/dstv.com_za.channels.xml
+          mv sites/dstv.com/dstv.com_za.channels.xml sites/dstv.com/dstv.com_za.channels.xml.backup
+          sed -e 's/&/\&amp;/g' -e "s/'/\&apos;/g" sites/dstv.com/dstv.com_za.channels.xml.backup > sites/dstv.com/dstv.com_za.channels.xml
       - run: CHANNELS_PATH=sites/${{inputs.site}}/*.channels.xml npm run queue:create -- --max-clusters=1 --days=3
       - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000  --cluster-id=1
       - run: npm run programs:save
