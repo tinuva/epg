@@ -50,9 +50,9 @@ jobs:
           jq -r '.Channels[] | "<channel lang=\"en\" xmltv_id=\"\(.Tag)\" site_id=\"zaf#\(.Number)\">\(.Name)</channel>"' >> sites/dstv.com/dstv.com_za.channels.xml
           echo '</channels>' >> sites/dstv.com/dstv.com_za.channels.xml
           echo '</site>' >> sites/dstv.com/dstv.com_za.channels.xml
-          echo '-------- CHANNELS - start --------'
-          cat scripts/data/channels.json
-          echo '-------- CHANNELS - end --------'
+          #echo '-------- CHANNELS - start --------'
+          #cat scripts/data/channels.json
+          #echo '-------- CHANNELS - end --------'
           echo '-------- CHANNELS - dstv start --------'
           cat sites/dstv.com/dstv.com_za.channels.xml
           echo '-------- CHANNELS - dstv end --------'
