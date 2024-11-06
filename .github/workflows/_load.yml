@@ -63,7 +63,7 @@ jobs:
       #     app_id: ${{ secrets.APP_ID }}
       #     private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4.6.8
         with:
           branch: gh-pages
           folder: .gh-pages
