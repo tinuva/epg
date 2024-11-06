@@ -15,11 +15,11 @@ module.exports = {
   },
   url: function ({ channel, date }) {
     const [region] = channel.site_id.split('#')
-    const packageName = region === 'nga' ? 'DStv%20Premium' : ''
+    const packageName = region === 'nga' ? 'DStv%20Premium' : 'Premium'
 
     return `https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=${date.format(
       'YYYY-MM-DD'
-    )}&package=${packageName}&country=${region}`
+    )}&package=${packageName}&country=${region}&unit=dstv`
   },
   async parser({ content, channel }) {
     let programs = []
