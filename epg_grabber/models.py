@@ -9,7 +9,10 @@ from pytz import timezone
 class Channel(BaseModel):
     id: str = Field(alias="@id")
     display_name: Union[str, Dict] = Field(alias="display-name")
+    xml_id: Optional[str] = None  # Store the Tag (HDT) value
+    channel_id: Optional[str] = None  # Store the original numeric channel ID
     icon: Union[str, Dict]
+    url: str = Field(default="https://dstv.com")
 
     class Config:
         allow_population_by_field_name = True
@@ -19,8 +22,11 @@ class Channel(BaseModel):
         value = [value.replace(char, "")
                  for char in punctuation if char != "."][0]
         value = value.replace(" ", "")
-
         return value.lower()
+
+    @validator("xml_id", pre=True)
+    def use_xml_id(cls, value, values):
+        return value.upper() if value else None
 
     @validator("display_name")
     def lang_dict(cls, value):

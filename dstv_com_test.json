@@ -1,0 +1,12 @@
+{
+    "days": 3,
+    "workers": 1,
+    "configs": [
+        {
+            "site": "dstv_com",
+            "channels": [
+                "101", "104"
+            ]
+        }
+    ]
+}

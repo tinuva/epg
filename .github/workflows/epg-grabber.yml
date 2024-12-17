@@ -1,0 +1,54 @@
+name: EPG Grabber
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  grab-epg:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+          
+      - name: Generate EPG
+        run: |
+          py-epg-cli local --file dstv_com.json -o dstv.com.epg.xml -d 3
+          
+      - name: Create gzipped version
+        run: |
+          gzip -c dstv.com.epg.xml > dstv.com.epg.xml.gz
+          
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          
+      - name: Deploy to gh-pages
+        run: |
+          # Create gh-pages branch if it doesn't exist
+          if ! git show-ref --quiet refs/remotes/origin/gh-pages; then
+            git checkout --orphan gh-pages
+            git rm -rf .
+          else
+            git fetch origin gh-pages
+            git checkout gh-pages
+          fi
+          
+          # Add and commit files
+          git add dstv.com.epg.xml dstv.com.epg.xml.gz
+          git commit -m "Update EPG data" || echo "No changes to commit"
+          
+          # Push changes
+          git push origin gh-pages
