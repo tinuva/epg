@@ -54,7 +54,8 @@ class Programme(BaseModel):
     title: str
     desc: Optional[str]
     episode: Optional[str]
-    category: Optional[str]
+    category: Optional[List[str]]
+    icon: Optional[str]
     rating: Optional[str]
 
     class Config:
@@ -76,6 +77,12 @@ class Programme(BaseModel):
             value = ''
 
         return dict({"@lang": "en", "#text": value.strip()})
+
+    @validator("category")
+    def category_list_to_dict(cls, value):
+        if not value:
+            return None
+        return [{"@lang": "en", "#text": cat.strip()} for cat in value if cat]
 
 
 class TvDataItem(BaseModel):

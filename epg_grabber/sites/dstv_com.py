@@ -158,11 +158,18 @@ def get_programs(
                 logger.error(f"Error fetching program details: {e}")
                 details = {}
  
-            # Handle category - convert list to string if needed
-            category = None
+            # Handle categories
+            categories = []
             if "SubGenres" in details and details["SubGenres"]:
                 # Take first genre if multiple exist
-                category = details["SubGenres"][0] if details["SubGenres"] else None
+                categories.extend(details["SubGenres"])
+            if "Genre" in details and details["Genre"]:
+                categories.append(details["Genre"])
+
+            # Get program icon if available
+            icon = details.get("Image", None)
+            if icon and not icon.startswith("http"):
+                icon = f"https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/{icon}"
 
             programme_obj = Programme(
                 start=sa_tz.localize(datetime.strptime(program["StartTime"], "%Y-%m-%dT%H:%M:%S")),
@@ -171,7 +178,8 @@ def get_programs(
                 title=program["Title"],
                 desc=details.get("Synopsis", ""),
                 #category=details.get("SubGenres", []) if "SubGenres" in details else None
-                category=category
+                category=categories if categories else None,
+                icon=icon
             )
  
             programmes.append(programme_obj)
