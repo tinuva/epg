@@ -32,28 +32,18 @@ jobs:
         run: |
           gzip -c dstv.com.epg.xml > dstv.com.epg.xml.gz
           
-      - name: Setup git config
+      - name: Create deployment directory
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+          mkdir -p .gh-pages
+          cp dstv.com.epg.xml .gh-pages/
+          cp dstv.com.epg.xml.gz .gh-pages/
           
-      - name: Deploy to gh-pages
-        run: |
-          # Check if gh-pages branch exists in remote
-          if git ls-remote --heads origin gh-pages | grep -q refs/heads/gh-pages; then
-            # If it exists, fetch and checkout
-            git fetch origin gh-pages:gh-pages
-            git checkout gh-pages
-          else
-            # If it doesn't exist, create a new orphan branch
-            git checkout --orphan gh-pages
-            git rm -rf .
-          fi
-          
-          # Add and commit files
-          git pull origin gh-pages --rebase || true
-          git add dstv.com.epg.xml dstv.com.epg.xml.gz
-          git commit -m "Update EPG data" || echo "No changes to commit"
-          
-          # Push changes
-          git push origin gh-pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.6.8
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          git-config-name: GitHub Actions Bot
+          git-config-email: github-actions[bot]@users.noreply.github.com
+          commit-message: '[Bot] Update EPG data'
+          clean: true
