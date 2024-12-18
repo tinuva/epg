@@ -11,7 +11,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      
+        with:
+          fetch-depth: 0
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -37,16 +39,19 @@ jobs:
           
       - name: Deploy to gh-pages
         run: |
-          # Create gh-pages branch if it doesn't exist
-          if ! git show-ref --quiet refs/remotes/origin/gh-pages; then
+          # Check if gh-pages branch exists in remote
+          if git ls-remote --heads origin gh-pages | grep -q refs/heads/gh-pages; then
+            # If it exists, fetch and checkout
+            git fetch origin gh-pages:gh-pages
+            git checkout gh-pages
+          else
+            # If it doesn't exist, create a new orphan branch
             git checkout --orphan gh-pages
             git rm -rf .
-          else
-            git fetch origin gh-pages
-            git checkout gh-pages
           fi
           
           # Add and commit files
+          git pull origin gh-pages --rebase || true
           git add dstv.com.epg.xml dstv.com.epg.xml.gz
           git commit -m "Update EPG data" || echo "No changes to commit"
           
