@@ -73,8 +73,6 @@ def get_programs(
 ) -> List[Programme]:
     programmes: List[Programme] = []
     channel_name = channel_xml_id if channel_xml_id else channel_id
-    #channel_name = channel_xml_id  # Use the Tag (HDT) as the channel ID in output
-    #channel_name = channel_id  # Use the numeric channel ID in output
  
     # DSTV uses South African timezone
     sa_tz = timezone('Africa/Johannesburg')

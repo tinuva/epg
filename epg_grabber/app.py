@@ -33,8 +33,7 @@ def _run_by_config_item(config: InputConfigItem, days: int) -> Tuple[List[Progra
         return
 
     for channel_id in config.channels:
-        #append_channel_id = (f"{channel_id}.{config.site}").lower()
-        append_channel_id = channel_id
+        append_channel_id = (f"{channel_id}.{config.site}").lower()
 
         logger.info(f"Grabbing programs for {append_channel_id}...")
 
@@ -48,10 +47,9 @@ def _run_by_config_item(config: InputConfigItem, days: int) -> Tuple[List[Progra
         ]
 
         if valid_channel:
-            #valid_channel[0].id = append_channel_id
             valid_channel[0].id = valid_channel[0].xml_id
             valid_channel[0].channel_id = channel_id
-            #valid_channel[0].id = (f"{channel_id}.{config.site}").lower()
+            valid_channel[0].id = (f"{channel_id}.{config.site}").lower()
             channels.append(valid_channel[0])
         else:
             logger.error(
@@ -62,8 +60,7 @@ def _run_by_config_item(config: InputConfigItem, days: int) -> Tuple[List[Progra
             programmes_inner = site.get_programs(
                 channel_id=channel_id,
                 days=days,
-                #channel_xml_id=append_channel_id,
-                channel_xml_id=valid_channel[0].xml_id,
+                channel_xml_id=append_channel_id,
             )
         except Exception as e:
             logger.error(
