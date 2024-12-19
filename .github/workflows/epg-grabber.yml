@@ -35,8 +35,9 @@ jobs:
       - name: Create deployment directory
         run: |
           mkdir -p .gh-pages
-          cp dstv.com.epg.xml .gh-pages/
-          cp dstv.com.epg.xml.gz .gh-pages/
+          mkdir -p .gh-pages/guides/za
+          cp dstv.com.epg.xml .gh-pages/guides/za/
+          cp dstv.com.epg.xml.gz .gh-pages/guides/za/
           
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.6.8
