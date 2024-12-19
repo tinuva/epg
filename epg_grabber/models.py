@@ -9,10 +9,8 @@ from pytz import timezone
 class Channel(BaseModel):
     id: str = Field(alias="@id")
     display_name: Union[str, Dict] = Field(alias="display-name")
-    xml_id: Optional[str] = None  # Store the Tag (HDT) value
-    channel_id: Optional[str] = None  # Store the original numeric channel ID
+    channel_id: Optional[str] = None
     icon: Union[str, Dict]
-    url: str = Field(default="https://dstv.com")
 
     class Config:
         allow_population_by_field_name = True
@@ -53,6 +51,7 @@ class Programme(BaseModel):
     channel: str = Field(alias="@channel")
     title: str
     desc: Optional[str]
+    season: Optional[str]
     episode: Optional[str]
     category: Optional[List[str]]
     icon: Optional[str]
@@ -63,11 +62,9 @@ class Programme(BaseModel):
 
     @validator("start", "stop")
     def xmltv_datetime_string(cls, value):
-
         if not value.tzinfo:
             utc = timezone('utc')
             value = utc.localize(value)
-        
         xmltv_string = value.strftime(EPG_XMLTV_TIMEFORMAT)
         return xmltv_string
 
@@ -75,7 +72,6 @@ class Programme(BaseModel):
     def lang_dict(cls, value: str):
         if not value:
             value = ''
-
         return dict({"@lang": "en", "#text": value.strip()})
 
     @validator("category")

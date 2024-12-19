@@ -158,16 +158,11 @@ def get_programs(
  
             # Handle categories
             categories = []
+            if "Genre" in details and details["MainGenres"]:
+                categories.extend(details["MainGenres"])
             if "SubGenres" in details and details["SubGenres"]:
                 # Take first genre if multiple exist
                 categories.extend(details["SubGenres"])
-            if "Genre" in details and details["Genre"]:
-                categories.append(details["Genre"])
-
-            # Get program icon if available
-            icon = details.get("Image", None)
-            if icon and not icon.startswith("http"):
-                icon = f"https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/{icon}"
 
             programme_obj = Programme(
                 start=sa_tz.localize(datetime.strptime(program["StartTime"], "%Y-%m-%dT%H:%M:%S")),
@@ -175,9 +170,11 @@ def get_programs(
                 channel=channel_name,
                 title=program["Title"],
                 desc=details.get("Synopsis", ""),
-                #category=details.get("SubGenres", []) if "SubGenres" in details else None
-                category=categories if categories else None,
-                icon=icon
+                category=categories,
+                icon=details.get("ThumbnailUri", None),
+                rating=details.get("Rating", None),
+                season=details.get("SeasonNumber", None),
+                episode=details.get("EpisodeNumber", None)
             )
  
             programmes.append(programme_obj)

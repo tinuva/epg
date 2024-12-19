@@ -99,6 +99,32 @@ def run(input_config: InputConfig) -> Tuple[List[Programme], List[Channel]]:
     return programmes, channels
 
 
+def remove_empty_values(d):
+    """
+    Recursively remove empty values (None, empty string, empty dict, empty list) from a dictionary
+    """
+    if not isinstance(d, (dict, list)):
+        return d
+    
+    if isinstance(d, list):
+        return [v for v in (remove_empty_values(v) for v in d) if v]
+    
+    return {
+        k: v
+        for k, v in ((k, remove_empty_values(v)) for k, v in d.items())
+        if v not in (None, "", {}, []) and (not isinstance(v, dict) or v)
+    }
+ 
+ 
+def clean_dict_for_xml(d):
+    """
+    Process dictionary before XML conversion to remove empty values
+    """
+    # First convert to dict to handle Pydantic models
+    as_dict = d.dict(by_alias=True) if hasattr(d, 'dict') else d
+    return remove_empty_values(as_dict)
+
+
 def save_to_file(tv_data: TvData, filename: str):
     """
     Saves TV data to an XML file.
@@ -110,7 +136,7 @@ def save_to_file(tv_data: TvData, filename: str):
     if not filename.endswith(XML_FILE_EXT):
         filename += XML_FILE_EXT
 
-    xml_dict = tv_data.dict(by_alias=True)
+    xml_dict = clean_dict_for_xml(tv_data)
     xml_string = unparse(xml_dict, pretty=True, short_empty_elements=True)
 
     with open(filename, "w") as output_file:
