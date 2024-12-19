@@ -22,10 +22,6 @@ class Channel(BaseModel):
         value = value.replace(" ", "")
         return value.lower()
 
-    @validator("xml_id", pre=True)
-    def use_xml_id(cls, value, values):
-        return value.upper() if value else None
-
     @validator("display_name")
     def lang_dict(cls, value):
         if isinstance(value, Dict):

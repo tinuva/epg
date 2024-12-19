@@ -47,7 +47,6 @@ def _run_by_config_item(config: InputConfigItem, days: int) -> Tuple[List[Progra
         ]
 
         if valid_channel:
-            valid_channel[0].id = valid_channel[0].xml_id
             valid_channel[0].channel_id = channel_id
             valid_channel[0].id = (f"{channel_id}.{config.site}").lower()
             channels.append(valid_channel[0])
