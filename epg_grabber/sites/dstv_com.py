@@ -91,7 +91,7 @@ def get_programs(
                     "unit": "dstv"
                 }
 
-        max_retries = 100
+        max_retries = 3
         retry_count = 0
         retry_delay = 10  # seconds between retries
  
@@ -121,7 +121,7 @@ def get_programs(
             retry_count += 1
             logger.warning(f"Attempt {retry_count}/{max_retries}: No valid data, retrying...")
             logger.debug(f"URL: {PROGRAMS_URL}{params_str}")
-            #session.close()
+            session.close()
             if retry_count < max_retries:
                 time.sleep(retry_delay)
         
