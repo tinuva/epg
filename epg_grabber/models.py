@@ -33,7 +33,6 @@ class Channel(BaseModel):
     def icon_str(cls, value):
         if isinstance(value, Dict):
             value = value["@src"]
-
         return dict({"@src": value})
 
 
@@ -75,6 +74,12 @@ class Programme(BaseModel):
         if not value:
             return None
         return [{"@lang": "en", "#text": cat.strip()} for cat in value if cat]
+
+    @validator("icon")
+    def icon_str(cls, value):
+        if isinstance(value, Dict):
+            value = value["@src"]
+        return dict({"@src": value})
 
 
 class TvDataItem(BaseModel):
