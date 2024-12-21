@@ -13,13 +13,12 @@ PROGRAM_DETAIL_URL = "https://www.dstv.com/umbraco/api/TvGuide/GetProgramme"
  
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-    #"Accept": "application/json",
-    "Accept": "*/*",
-    #"Referer": "https://www.dstv.com/en-za/tv-guide",
-    #"Origin": "https://www.dstv.com"
+    "Referer": "https://www.dstv.com/en-za/tv-guide",
+    "Origin": "https://www.dstv.com"
 }
  
 session = requests.Session()
+session.cache_disabled = True
 
 @lru_cache(maxsize=None)
 def _cached_get_request(url: str, params_str: str) -> dict:
@@ -35,6 +34,7 @@ def _cached_get_request(url: str, params_str: str) -> dict:
         dict: JSON response data
     """
     params = eval(params_str)  # Convert string back to dict
+    params['cachebuster'] = time.time()
     response = session.get(url, params=params, headers=DEFAULT_HEADERS)
     data = response.json()
     return data
