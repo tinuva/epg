@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests
 import json
+import time
 from pathlib import Path
  
 CHANNELS_URL = "https://www.dstv.com/umbraco/api/TvGuide/GetChannels"
@@ -8,7 +9,8 @@ DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     "Accept": "application/json",
     "Referer": "https://www.dstv.com/en-za/tv-guide",
-    "Origin": "https://www.dstv.com"
+    "Origin": "https://www.dstv.com",
+    "Cache-Control": "no-cache"
 }
  
 def get_channels():
@@ -18,6 +20,7 @@ def get_channels():
             params={
                 "country": "zaf",
                 "unit": "dstv"
+                "cachebuster": time.time()
             },
             headers=DEFAULT_HEADERS
         )
