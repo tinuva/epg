@@ -12,6 +12,17 @@
             "xml_id": "HDT"
         },
         {
+            "id": "103",
+            "display_name": {
+                "@lang": "en",
+                "#text": "1Max"
+            },
+            "icon": {
+                "@src": "https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/channel/VAM.png"
+            },
+            "xml_id": "VAM"
+        },
+        {
             "id": "104",
             "display_name": {
                 "@lang": "en",

@@ -23,7 +23,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -e .
-          
+
+      - name: Generate DSTV metadata and config
+        run: |
+          # Generate channel metadata
+          python scripts/generate_dstv_metadata.py
+
+          # Generate input config with all channels
+          python scripts/generate_dstv_config.py
+
       - name: Generate EPG
         run: |
           py-epg-cli local --file dstv_com.json -o dstv.com.epg.xml -d 3
