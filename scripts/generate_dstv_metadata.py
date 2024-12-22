@@ -19,7 +19,7 @@ def get_channels():
             CHANNELS_URL,
             params={
                 "country": "zaf",
-                "unit": "dstv"
+                "unit": "dstv",
                 "cachebuster": time.time()
             },
             headers=DEFAULT_HEADERS
