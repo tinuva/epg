@@ -89,9 +89,9 @@ def get_programs(
                     "unit": "dstv"
                 }
 
-        max_retries = 3
+        max_retries = 60
         retry_count = 0
-        retry_delay = 10  # seconds between retries
+        retry_delay = 1  # seconds between retries
  
         while retry_count < max_retries:
             try:
@@ -99,7 +99,7 @@ def get_programs(
                 # Try to get from cache first
                 try:
                     data = _cached_get_request(PROGRAMS_URL, params_str)
-                    logger.debug(f"Programs cache info: {_cached_get_request.cache_info()}")
+                    # logger.debug(f"Programs cache info: {_cached_get_request.cache_info()}")
                 except Exception:
                     # If cache miss or error, make new request
                     response = session.get(PROGRAMS_URL, params=params, headers=DEFAULT_HEADERS)
