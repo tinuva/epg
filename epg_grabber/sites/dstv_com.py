@@ -118,7 +118,7 @@ def get_programs(
 
             retry_count += 1
             logger.warning(f"Attempt {retry_count}/{max_retries}: No valid data, retrying...")
-            logger.debug(f"URL: {PROGRAMS_URL}{params_str}")
+            logger.debug(f"URL: {PROGRAMS_URL}?{'&'.join(f'{k}={v}' for k, v in params.items())}")
             session.close()
             if retry_count < max_retries:
                 time.sleep(retry_delay)
