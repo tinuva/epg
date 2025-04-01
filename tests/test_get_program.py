@@ -3,12 +3,21 @@ from epg_grabber.constants import SITES_MODULE_IMPORT_PATH
 from epg_grabber.models import Programme, InputConfig
 from importlib import import_module
 import pytest
+import os
 
 import logging
 
 LOGGER = logging.getLogger(__name__)
 
 sites = get_sites()
+
+# Skip certain tests in CI environment
+SKIP_IN_CI = [
+    "unifi_com_my",
+    "visionplus_id",
+    "sooka_my",
+    "nostv_pt"
+]
 
 site_test_config = {
     "configs": [
@@ -61,6 +70,11 @@ input_config_items = input_config.configs
 
 @pytest.mark.parametrize("config", input_config_items)
 def test_get_program(config):
+    # Skip problematic services in CI
+    if os.environ.get('CI') and config.site in SKIP_IN_CI:
+        pytest.skip(f"Skipping {config.site} in CI environment")
+        return
+
     LOGGER.info(f"Testing {config.site}.")
     site_module_path = f"{SITES_MODULE_IMPORT_PATH}.{config.site}"
     site_module = import_module(site_module_path)

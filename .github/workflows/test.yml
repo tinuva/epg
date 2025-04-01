@@ -27,4 +27,6 @@ jobs:
 
     - run: pip install -r requirements-tests.txt
 
-    - run: pytest --log-cli-level=DEBUG
+    - run: pytest --log-cli-level=DEBUG --durations=0
+      env:
+        CI: true
