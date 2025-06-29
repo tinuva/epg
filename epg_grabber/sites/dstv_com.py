@@ -89,7 +89,7 @@ def get_programs(
                     "unit": "dstv"
                 }
 
-        max_retries = 60
+        max_retries = 10
         retry_count = 0
         retry_delay = 1  # seconds between retries
  
