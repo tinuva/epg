@@ -64,7 +64,7 @@ site_test_config = {
     ]
 }
 
-input_config = InputConfig.parse_obj(site_test_config)
+input_config = InputConfig.model_validate(site_test_config)
 input_config_items = input_config.configs
 
 

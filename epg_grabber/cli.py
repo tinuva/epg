@@ -23,7 +23,8 @@ def show(args):
 
 
 def local(args):
-    input_config = InputConfig.parse_file(args.file)
+    with open(args.file, 'r') as f:
+        input_config = InputConfig.model_validate(json.load(f))
 
     if args.days:
         input_config.days = 7 if args.days > 7 else args.days

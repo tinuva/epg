@@ -38,7 +38,9 @@ def _run_by_config_item(config: InputConfigItem, days: int) -> Tuple[List[Progra
         logger.info(f"Grabbing programs for {append_channel_id}...")
 
         ch_metadata_path = CHANNELS_METADATA_DIR/f"{config.site}.json"
-        ch_metadata = ChannelMetadata.parse_file(ch_metadata_path)
+        with open(ch_metadata_path, 'r') as f:
+            import json
+            ch_metadata = ChannelMetadata.model_validate(json.load(f))
 
         valid_channel = [
             valid_ch
@@ -120,7 +122,7 @@ def clean_dict_for_xml(d):
     Process dictionary before XML conversion to remove empty values
     """
     # First convert to dict to handle Pydantic models
-    as_dict = d.dict(by_alias=True) if hasattr(d, 'dict') else d
+    as_dict = d.model_dump(by_alias=True) if hasattr(d, 'model_dump') else d
     return remove_empty_values(as_dict)
 
 

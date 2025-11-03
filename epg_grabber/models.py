@@ -1,5 +1,5 @@
 from epg_grabber.constants import EPG_GENERATOR, EPG_XMLTV_TIMEFORMAT
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator, ConfigDict
 from datetime import datetime
 from string import punctuation
 from typing import List, Optional, Union, Dict
@@ -7,29 +7,31 @@ from pytz import timezone
 
 
 class Channel(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
     id: str = Field(alias="@id")
-    display_name: Union[str, Dict] = Field(alias="display-name")
+    display_name: Dict = Field(alias="display-name")
     channel_id: Optional[str] = None
-    icon: Union[str, Dict]
+    icon: Dict
 
-    class Config:
-        allow_population_by_field_name = True
-
-    @validator("id", pre=True)
+    @field_validator("id", mode="before")
+    @classmethod
     def tvg_id_sanitize(cls, value):
         value = [value.replace(char, "")
                  for char in punctuation if char != "."][0]
         value = value.replace(" ", "")
         return value.lower()
 
-    @validator("display_name")
+    @field_validator("display_name")
+    @classmethod
     def lang_dict(cls, value):
         if isinstance(value, Dict):
             value = value["#text"]
 
         return dict({"@lang": "en", "#text": value.strip()})
 
-    @validator("icon")
+    @field_validator("icon")
+    @classmethod
     def icon_str(cls, value):
         if isinstance(value, Dict):
             value = value["@src"]
@@ -41,44 +43,55 @@ class ChannelMetadata(BaseModel):
 
 
 class Programme(BaseModel):
-    start: datetime = Field(alias="@start")
-    stop: datetime = Field(alias="@stop")
+    model_config = ConfigDict(populate_by_name=True)
+
+    start: str = Field(alias="@start")
+    stop: str = Field(alias="@stop")
     channel: str = Field(alias="@channel")
-    title: str
-    desc: Optional[str]
-    season: Optional[str]
-    episode: Optional[str]
-    category: Optional[List[str]]
-    icon: Optional[str]
-    rating: Optional[str]
+    title: Dict
+    desc: Optional[Dict] = None
+    season: Optional[str] = None
+    episode: Optional[str] = None
+    category: Optional[List[Dict]] = None
+    icon: Optional[Dict] = None
+    rating: Optional[str] = None
 
-    class Config:
-        allow_population_by_field_name = True
-
-    @validator("start", "stop")
+    @field_validator("start", "stop", mode="before")
+    @classmethod
     def xmltv_datetime_string(cls, value):
+        if isinstance(value, str):
+            return value
         if not value.tzinfo:
             utc = timezone('utc')
             value = utc.localize(value)
         xmltv_string = value.strftime(EPG_XMLTV_TIMEFORMAT)
         return xmltv_string
 
-    @validator("title", "desc")
-    def lang_dict(cls, value: str):
+    @field_validator("title", "desc", mode="before")
+    @classmethod
+    def lang_dict(cls, value):
+        if isinstance(value, Dict):
+            return value
         if not value:
             value = ''
         return dict({"@lang": "en", "#text": value.strip()})
 
-    @validator("category")
+    @field_validator("category", mode="before")
+    @classmethod
     def category_list_to_dict(cls, value):
         if not value:
             return None
+        if isinstance(value, list) and value and isinstance(value[0], Dict):
+            return value
         return [{"@lang": "en", "#text": cat.strip()} for cat in value if cat]
 
-    @validator("icon")
+    @field_validator("icon", mode="before")
+    @classmethod
     def icon_str(cls, value):
         if isinstance(value, Dict):
-            value = value["@src"]
+            if "@src" in value:
+                return value
+            value = value.get("@src", value)
         return dict({"@src": value})
 
 
@@ -98,6 +111,6 @@ class InputConfigItem(BaseModel):
 
 
 class InputConfig(BaseModel):
-    days: Optional[int]
+    days: Optional[int] = None
     configs: List[InputConfigItem]
-    workers: Optional[int]
+    workers: Optional[int] = None
