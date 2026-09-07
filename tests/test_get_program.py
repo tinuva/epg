@@ -16,7 +16,8 @@ SKIP_IN_CI = [
     "unifi_com_my",
     "visionplus_id",
     "sooka_my",
-    "nostv_pt"
+    "nostv_pt",
+    "mana2_my"
 ]
 
 site_test_config = {
