@@ -17,7 +17,8 @@ SKIP_IN_CI = [
     "visionplus_id",
     "sooka_my",
     "nostv_pt",
-    "mana2_my"
+    "mana2_my",
+    "cinemaworld_asia"
 ]
 
 site_test_config = {

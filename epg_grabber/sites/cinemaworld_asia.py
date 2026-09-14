@@ -41,6 +41,7 @@ def get_programs(
         except Exception as e:
             raise e
 
+        response.raise_for_status()
         schedules.extend(response.json()['shows'])
 
     for i in range(len(schedules)):
